@@ -1,7 +1,7 @@
 const express = require("express");
 const multer = require("multer");
 
-import { dataFormattata } from "../utilities/NameFile";
+const { getDataFormattata } = require("../utilities/NameFile");
 
 const router = express.Router();
 
@@ -11,7 +11,8 @@ const storage = multer.diskStorage({
     cb(null, "uploads/");
   },
   filename: (req, file, cb) => {
-    cb(null, dataFormattata + "_" + file.originalname);
+    const data = getDataFormattata ()
+    cb(null, data + "_" + file.originalname);
   }
 });
 
