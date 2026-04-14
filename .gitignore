@@ -1,0 +1,14 @@
+# Ignora le dipendenze (Node.js)
+node_modules/
+
+# Ignora file di configurazione locale/segreti
+.env
+*.log
+
+# Ignora cartelle di build
+dist/
+build/
+
+# Ignora file di sistema (macOS/Windows)
+.DS_Store
+Thumbs.db
