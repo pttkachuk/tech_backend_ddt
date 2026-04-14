@@ -17,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/pttkachuk/tech_backend_ddt/issues"
   },
-  "homepage": "https://github.com/pttkachuk/tech_backend_ddt#readme"
+  "homepage": "https://github.com/pttkachuk/tech_backend_ddt#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "multer": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
